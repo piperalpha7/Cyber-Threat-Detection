@@ -30,3 +30,5 @@ The Autoencoder extracted features from bothe AE2 and AE3 were added to the orig
 XGBoost and ADABoost proved to be the best classifiers with 97.66% and 98.14% accuracy respectively...each being trained on only 5 features. Out of these 5 features 3 were autoencoder extracted features 
 
 Apart from Accuracy, other evaluation metrics like F-1 Score, Precision , Recall and Matthew's Corelation Coefficient were used
+
+State-of-the-art papers by 'Aminanto et.al' , 'Kolias et. al' , 'Parker et al' and 'Seo et al' have been attached and have been really helpful
