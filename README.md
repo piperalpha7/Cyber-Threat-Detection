@@ -21,3 +21,12 @@ b. Machine Learning Algorithms - Once the important features have been determine
 
 c. Evaluations - Evaluate using various metrics and see how the ML algorithms performed.
 
+After normalising the data, I created 2 Autoencoder Models(AE2,AE3). The extracted faetures of both these models performed better than standard dimensionality techniques like PCA.
+
+The Autoencoder extracted features from bothe AE2 and AE3 were added to the original features in seperate cases. 'Mutual Information' feature selection technique was applied on the 'Original Features + Extracted features' and the TOP 20 features were selected.
+
+5 Machine Learning classifiers were trained iteratively on these 20 features, for instance XG Boost algorithm was trained on the TOP 1 feature. In the next iteration it was trained on the TOP 2 features and so on till the TOP 20 features
+
+XGBoost and ADABoost proved to be the best classifiers with 97.66% and 98.14% accuracy respectively...each being trained on only 5 features. Out of these 5 features 3 were autoencoder extracted features 
+
+Apart from Accuracy, other evaluation metrics like F-1 Score, Precision , Recall and Matthew's Corelation Coefficient were used
